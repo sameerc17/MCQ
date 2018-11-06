@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     {
         AlertDialog.Builder alertDialogBuilder=new AlertDialog.Builder(MainActivity.this);
         alertDialogBuilder
-                .setMessage("GAME OVER !! Your Score is "+score+" points.")
+                .setMessage("GAME OVER !!! Your Score is "+score+" points.")
                 .setCancelable(false)
                 .setPositiveButton("NEW GAME",
                         new DialogInterface.OnClickListener() {
