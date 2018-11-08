@@ -8,7 +8,11 @@ public class Questions {
             "What is 35 squared ?",
             "When did India become independent ?",
             "What does 'www' stand for in internet terminology?",
-            "Who was the inventor of Radio ?"
+            "Who was the inventor of Radio ?",
+            "Who won the football world cup in 2010 ?",
+            "'Euro' is NOT the currency of which of the following countries ?",
+            "What is the full form of ISP ?",
+            "Who is the best footballer in the world ? (:p)"
 
     };
 
@@ -18,11 +22,16 @@ public class Questions {
             {"1335","1995","1295","1225"},
             {"1935","1905","1295","1947"},
             {"World Web Wide","World Wide Web","World Windows Web","Windows Wide Web"},
-            {"Edison","Faraday","Marconi","Einstein"}
+            {"Edison","Faraday","Marconi","Einstein"},
+            {"Spain","Argentina","Brazil","Italy"},
+            {"Germany","Spain","Macedonia","Luxembourg"},
+            {"Intranet Service Procedure","Internet Service Procedure","Internet Service Provider","Internet Simulation Process"},
+            {"Messi","Ronaldo","Di Stefano","Cruyff"}
+
         };
 
     private String nCorrectAnswers[]={
-            "Kabul","Canberra","1225","1947","World Wide Web","Marconi"
+            "Kabul","Canberra","1225","1947","World Wide Web","Marconi","Spain","Macedonia","Internet Service Provider","Messi"
     };
 
     public String getQuestion(int s) {

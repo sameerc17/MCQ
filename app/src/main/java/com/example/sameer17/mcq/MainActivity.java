@@ -9,8 +9,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import java.util.Random;
-
 public class MainActivity extends AppCompatActivity {
 
     private void updateQuestion(int s) {
@@ -51,19 +49,17 @@ public class MainActivity extends AppCompatActivity {
 
     Button b1,b2,b3,b4;
     TextView t1,t2;
+    int r=0;
+
 
     private Questions nQuestion=new Questions();
     private String answer;
     private int score=0;
-    private int nQuestionLength=nQuestion.nQuestions.length;
-    Random r;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        r=new Random();
 
         b1=(Button) findViewById(R.id.button1);
         b2=(Button) findViewById(R.id.button2);
@@ -74,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
 
         t1.setText("Score is: "+score);
 
-        updateQuestion(r.nextInt(nQuestionLength));
+        updateQuestion(r);
 
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -83,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
                 {
                     score++;
                     t1.setText("Score is: "+score);
-                    updateQuestion(r.nextInt(nQuestionLength));
+                    updateQuestion(++r);
                 }
                 else
                 {
@@ -100,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
                 {
                     score++;
                     t1.setText("Score is: "+score);
-                    updateQuestion(r.nextInt(nQuestionLength));
+                    updateQuestion(++r);
                 }
                 else
                 {
@@ -117,7 +113,7 @@ public class MainActivity extends AppCompatActivity {
                 {
                     score++;
                     t1.setText("Score is: "+score);
-                    updateQuestion(r.nextInt(nQuestionLength));
+                    updateQuestion(++r);
                 }
                 else
                 {
@@ -134,7 +130,7 @@ public class MainActivity extends AppCompatActivity {
                 {
                     score++;
                     t1.setText("Score is: "+score);
-                    updateQuestion(r.nextInt(nQuestionLength));
+                    updateQuestion(++r);
                 }
                 else
                 {
